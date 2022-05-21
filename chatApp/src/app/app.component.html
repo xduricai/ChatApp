@@ -1,0 +1,23 @@
+<header class="hdr">
+  <h2> Material Design </h2>
+  
+  <div class="head-wrapper">
+    <h1 id="app-name"> Simple Chat Application </h1>
+    
+    <button id="add-person" mat-raised-button [ngStyle]="{'background-color': '#6200ee', 'color': '#ffffff', 'box-shadow': '0px 4px 5px #888888'}" (click) = "persons.addProfile()">
+      <mat-icon>add</mat-icon> ADD NEW PERSON
+    </button>
+  </div>
+
+</header>
+
+<hr/>
+
+<div class="wrapper">
+  
+  <div class="persons">
+    <app-person *ngFor="let person of persons.profiles" [id]="person.id" [name]="person.name"></app-person>
+  </div>
+
+  <app-chat-window class="messages"></app-chat-window>
+</div>

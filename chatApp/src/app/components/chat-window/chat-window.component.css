@@ -1,0 +1,57 @@
+mat-list {
+    height: 80%;
+    margin-bottom: 10%;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+mat-list-item {
+    margin-top: 1%;
+    height: auto !important;
+}
+
+mat-icon {
+    display: inline;
+    justify-content: left;
+    margin: 0.5% auto auto 0.5%;
+}
+
+button {
+    width: auto;
+    padding: 2% 3%;
+    margin: auto 3% 0 0;
+    font-size: 90%;
+    font-weight: 330;
+    justify-content: space-between;
+    border-radius: 9999999px;
+    float: right;
+}
+
+hr {
+    border-top: 1px solid grey;
+}
+
+h3 {
+    color: gray;
+    margin: 1% 1% 2% 1%;
+    font-size: 159%;
+    font-weight: 400;
+}
+
+.author {
+    font-weight: 450;
+}
+
+.text {
+    margin-top: 1%;
+}
+
+.wrapper {
+    height: 90%;
+    margin: 1%;
+    box-shadow: 0 0 15px #888888;
+}
+
+#msg {
+    width: 90%;
+}

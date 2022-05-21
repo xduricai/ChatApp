@@ -1,0 +1,16 @@
+<div [formGroup]="form">
+
+    <mat-form-field appearance="outline" [floatLabel]="floatLabelControl.value" [hideRequiredMarker]="hideRequiredControl.value">
+        <mat-label>{{name}}</mat-label>
+        <textarea matInput placeholder="Enter your message here..." [ngStyle]="{'resize': 'none'}" formControlName="message" rows="5" cols="40">></textarea>
+    </mat-form-field>
+    
+    <button *ngIf="getMessageLen() <= 0" disabled="true" mat-raised-button [ngStyle]="{'background-color': '#03dac5', 'color': '#000000', 'box-shadow': '0px 4px 5px #888888'}">
+        <mat-icon>keyboard_arrow_right</mat-icon> SEND
+    </button>
+    
+    <button *ngIf="getMessageLen() > 0" mat-raised-button [ngStyle]="{'background-color': '#03dac5', 'color': '#000000', 'box-shadow': '0px 4px 5px #888888'}" (click) = "msgServ.postMessage(getMessageValue())">
+        <mat-icon>keyboard_arrow_right</mat-icon> SEND
+    </button>
+    
+</div>

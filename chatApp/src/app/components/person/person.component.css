@@ -1,0 +1,22 @@
+div {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: auto;
+    padding: 2% 5%;
+    margin: 0 5% 0 auto;
+    font-size: 110%;
+    font-weight: 400;
+    justify-content: space-between;
+    border-radius: 9999999px;
+}
+
+mat-icon {
+    display: inline;
+    justify-content: left;
+    margin-right: auto;
+}
+
